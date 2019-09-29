@@ -28,12 +28,23 @@ package com.iluwatar.singleton;
  * This implementation is thread safe, however adding any other method and its thread safety
  * is developers responsibility.
  */
+
+/**
+ * 枚举形式的单例实现，饿汉式，线程安全
+ */
+
 public enum EnumIvoryTower {
 
   INSTANCE;
 
+  private String test = "111";
+
   @Override
   public String toString() {
     return getDeclaringClass().getCanonicalName() + "@" + hashCode();
+  }
+
+  public String getText(){
+    return test;
   }
 }

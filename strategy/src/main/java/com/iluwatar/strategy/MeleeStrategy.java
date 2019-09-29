@@ -36,6 +36,6 @@ public class MeleeStrategy implements DragonSlayingStrategy {
 
   @Override
   public void execute() {
-    LOGGER.info("With your Excalibur you sever the dragon's head!");
+    LOGGER.info("用王者之剑砍下巨龙的脑袋!");
   }
 }

@@ -24,6 +24,7 @@ package com.iluwatar.factory.method;
 
 /**
  * ElfWeapon.
+ * 精灵族武器
  */
 public class ElfWeapon implements Weapon {
 

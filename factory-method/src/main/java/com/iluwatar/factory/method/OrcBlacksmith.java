@@ -25,6 +25,7 @@ package com.iluwatar.factory.method;
 /**
  * 
  * Concrete subclass for creating new objects.
+ * 兽人铁匠，打造兽人族武器
  * 
  */
 public class OrcBlacksmith implements Blacksmith {

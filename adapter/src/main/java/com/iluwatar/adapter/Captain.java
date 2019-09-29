@@ -25,6 +25,7 @@ package com.iluwatar.adapter;
 /**
  * The Captain uses {@link RowingBoat} to sail. <br>
  * This is the client in the pattern.
+ * 这时候船长就可以对客户说，我这就是一艘划船
  */
 public class Captain {
 

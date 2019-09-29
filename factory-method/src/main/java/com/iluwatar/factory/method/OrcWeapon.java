@@ -24,6 +24,7 @@ package com.iluwatar.factory.method;
 
 /**
  * OrcWeapon.
+ * 兽人族武器
  */
 public class OrcWeapon implements Weapon {
 

@@ -24,9 +24,11 @@ package com.iluwatar.factory.method;
 
 /**
  * Weapon interface.
+ * 武器接口
  */
 public interface Weapon {
 
+  //获得武器的类型
   WeaponType getWeaponType();
 
 }

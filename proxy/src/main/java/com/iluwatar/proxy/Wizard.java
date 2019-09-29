@@ -25,6 +25,7 @@ package com.iluwatar.proxy;
 /**
  * 
  * Wizard
+ * 巫师
  *
  */
 public class Wizard {

@@ -28,16 +28,10 @@ package com.iluwatar.adapter;
  * interface expected by the client ({@link Captain}).
  *  装个划船器配件，就变成了一艘新的船，支持手划的船
  */
-public class FishingBoatAdapter implements RowingBoat {
-
-  private FishingBoat boat;
-
-  public FishingBoatAdapter() {
-    boat = new FishingBoat();
-  }
+public class FishingBoatAdapter2 extends FishingBoat implements RowingBoat {
 
   @Override
   public void row() {
-    boat.sail();
+    this.sail();
   }
 }

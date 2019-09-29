@@ -22,6 +22,10 @@
  */
 package com.iluwatar.singleton;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 /**
  * Date: 12/29/15 - 19:20 PM
  *
@@ -36,4 +40,9 @@ public class EnumIvoryTowerTest extends SingletonTest<EnumIvoryTower> {
     super(() -> EnumIvoryTower.INSTANCE);
   }
 
+
+  @Test
+  public void testGetText(){
+    assertEquals(EnumIvoryTower.INSTANCE.getText(),"111");
+  }
 }

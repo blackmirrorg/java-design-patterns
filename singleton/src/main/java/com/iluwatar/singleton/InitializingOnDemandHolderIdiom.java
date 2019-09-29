@@ -35,17 +35,31 @@ package com.iluwatar.singleton;
  * language constructs (i.e. volatile or synchronized).
  *
  */
+
+import java.util.Hashtable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+  * 静态内部类实现，懒加载，线程安全，适用于所有的JDK版本
+ *  原理：内部类初始化时间会在getInstance()之后，所以不需要在构造方法中所其他额外的线程安全处理
+ *  虚拟机会保证一个类的构造器<clinit>()方法在多线程环境中被正确地加载，同步，如果多个线程同时去初始化一个类，那么只有一个线程去执行这个类的
+ *  构造器<clinit>()方法，其他线程都需要阻塞等待，直到活动线程执行<clinit>（）方法完毕。
+ */
 public final class InitializingOnDemandHolderIdiom {
 
   /**
    * Private constructor.
    */
-  private InitializingOnDemandHolderIdiom() {}
+  private InitializingOnDemandHolderIdiom() {
+    System.out.println("我被创建了");
+  }
 
   /**
    * @return Singleton instance
    */
   public static InitializingOnDemandHolderIdiom getInstance() {
+    System.out.println("getInstance被调用了");
     return HelperHolder.INSTANCE;
   }
 
@@ -55,5 +69,6 @@ public final class InitializingOnDemandHolderIdiom {
   private static class HelperHolder {
     private static final InitializingOnDemandHolderIdiom INSTANCE =
         new InitializingOnDemandHolderIdiom();
+
   }
 }

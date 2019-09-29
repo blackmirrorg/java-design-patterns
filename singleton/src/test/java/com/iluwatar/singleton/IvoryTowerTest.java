@@ -22,6 +22,8 @@
  */
 package com.iluwatar.singleton;
 
+import org.junit.Test;
+
 /**
  * Date: 12/29/15 - 19:23 PM
  *
@@ -34,6 +36,11 @@ public class IvoryTowerTest extends SingletonTest<IvoryTower> {
    */
   public IvoryTowerTest() {
     super(IvoryTower::getInstance);
+  }
+
+  @Test
+  public void create(){
+    IvoryTower.getInstance();
   }
 
 }

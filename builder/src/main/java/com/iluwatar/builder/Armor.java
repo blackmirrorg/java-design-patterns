@@ -25,11 +25,12 @@ package com.iluwatar.builder;
 /**
  * 
  * Armor enumeration
+ * 盔甲枚举
  *
  */
 public enum Armor {
 
-  CLOTHES("clothes"), LEATHER("leather"), CHAIN_MAIL("chain mail"), PLATE_MAIL("plate mail");
+  CLOTHES("布甲"), LEATHER("皮甲"), CHAIN_MAIL("锁子甲"), PLATE_MAIL("板甲");
 
   private String title;
 

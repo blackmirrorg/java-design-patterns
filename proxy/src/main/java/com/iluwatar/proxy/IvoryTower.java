@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * The object to be proxyed.
+ * 被代理对象
  * 
  */
 public class IvoryTower implements WizardTower {

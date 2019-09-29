@@ -25,7 +25,7 @@ package com.iluwatar.strategy;
 /**
  * 
  * DragonSlayer uses different strategies to slay the dragon.
- * 
+ *  屠龙者有不同的手段屠杀巨龙
  */
 public class DragonSlayer {
 

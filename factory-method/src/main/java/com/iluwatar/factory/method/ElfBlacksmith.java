@@ -25,6 +25,7 @@ package com.iluwatar.factory.method;
 /**
  * 
  * Concrete subclass for creating new objects.
+ * 精灵铁匠，打造精灵族武器
  * 
  */
 public class ElfBlacksmith implements Blacksmith {

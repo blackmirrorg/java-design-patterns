@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 
  * The proxy controlling access to the {@link IvoryTower}.
+ * 巫师塔的代理对象
  * 
  */
 public class WizardTowerProxy implements WizardTower {

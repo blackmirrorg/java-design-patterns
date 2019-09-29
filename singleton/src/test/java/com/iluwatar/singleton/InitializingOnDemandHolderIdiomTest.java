@@ -22,6 +22,8 @@
  */
 package com.iluwatar.singleton;
 
+import org.junit.Test;
+
 /**
  * Date: 12/29/15 - 19:22 PM
  *
@@ -36,4 +38,8 @@ public class InitializingOnDemandHolderIdiomTest extends SingletonTest<Initializ
     super(InitializingOnDemandHolderIdiom::getInstance);
   }
 
+  @Test
+  public void createInitializingOnDemandHolderIdiom(){
+    InitializingOnDemandHolderIdiom.getInstance();
+  }
 }
